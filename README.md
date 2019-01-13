@@ -10,3 +10,6 @@ There are three output data format defined:
 * PLAIN_COMPRESSED_BASE64_CIPHER - zlib compressed plain text encrypted data as base64 string
 
 See the examples in the unit tests.
+
+# unittest run
+> python -m unittest -v test.test_aeshelper
