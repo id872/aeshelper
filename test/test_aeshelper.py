@@ -11,7 +11,7 @@ from aeshelper.aeshelper import AesHelper, OutputFmt
 class TestAesHelper(TestCase):
     @staticmethod
     def get_random_string(length):
-        return ''.join(choice(printable) for dummy in range(length))
+        return ''.join(choice(printable) for _ in range(length))
 
     def test_encrypt_random_strings(self):
         def do_test(aes_helper, str_len_min, str_len_max):
